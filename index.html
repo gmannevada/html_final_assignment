@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegas Hawks Gym</title>
+    <link rel="stylesheet" href="site.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="navbar sticky">
+                <ul class="navbar-nav">
+                    <li class="nav-item accentcolored">Home</li>            
+                    <li class="nav-item"><a href="nutrition.html">Nutrition</a></li>
+                    <li class="nav-item"><a href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a href="logout.html">Logout</a></li>
+                </ul>
+                <img  id="logoimg" src="images/hawksgymlogo_300.png" alt="logo" class="logo">
+            </nav>
+            <h1 class="subtitle">Vegas Hawks Gym</h1>
+        </header>
+        <main>
+           <section class="featured">
+                 <!-- Featured classes, promotions, or trainers go here -->   
+                <h2>Featured Classes</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/-SSYX8sIOmM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <video  controls>
+                    <source src="https://youtu.be/-SSYX8sIOmM" type="video/mp4">
+                    <source src="https://youtu.be/-SSYX8sIOmM" type="video/ogg">
+                    Your Browser does not support the video tag
+                </video>
+                
+                <hr>
+           </section>
+           <section class="schedule">            
+            <h2>Daily Schedule</h2>
+                <!-- Class schedule or upcoming events go here -->
+                 <ul class="redbullets">
+                    <li><span>Monday  - (5:00 AM - 7:00 AM)</span> <span class="spanAccent"> Aerobics</span></li>
+                    <li><span>Tuesday - (5:00 AM - 7:00 AM)</span> <span class="spanAccent"> Yoga</span></li>
+                    <li><span>Wednesday -(All day)</span> </span> <span class="spanAccent"> Group Dance fitness sessions with Vance Strong body Builder club</span> </li>
+                    <li><span>Thursday - (5:00 AM - 7:00 AM) </span> <span class="spanAccent"> Exercise Video session</span></li>
+                    <li><span>Friday - (7:00 AM - 8:00 AM)</span> <span class="spanAccent"> Core Exercise session</span></li>
+                    <li><span>Saturday (sports exercise day)</span> <span class="spanAccent">8:00 AM - 10:00 AM Volley Ball, 10:00 AM - 11:00 AM - Basket Ball, 11:00 AM - 12:00 PM Table Tennis</span></li>
+                    <li><span>Sunday  - (all day - subject to change)</span><span class="spanAccent"> individual Personal Trainer sessions with top fitness experts and nutritionists<span></li>
+                 </ul>
+           </section>
+           <section class="membership">
+            <hr>
+            <p>
+                <h2>Membership</h2>
+                <p>Join our gym today and get access to our exclusive fitness classes, trainers,
+                     and nutritionists. 
+                     We have a variety of membership options to fit your needs.
+                </p>
+                <p>
+                    <span id="signupbutton" onclick="openForm()"> Sign up today!</span>      
+                </p>
+            </p>
+                <!-- Membership options and pricing go here -->
+                    <div class="form-popup" id="leroyForm">
+                        <form action="login.html" class="form-container">
+                            <h3 id="signinUpText">Sign Up</h3>
+                            
+                            <!-- radio button for(male,female) -->
+                             <input type="radio" name="sex" id="male" value="male">
+                             <label for="male"> Male </label>
+
+                             <input type="radio" name="sex" id="female" value="male">
+                             <label for="female"> Female</label>
+                            <br>
+                            <label for="name"><b>Name</b></label>
+                            <input type="text" placeholder="Enter Your Name" name="name" id="name" required>
+                        
+                            <label for="email"><b>Email</b></label>
+                            <input type="text" placeholder="Enter Email" name="email" id="email" required>
+                        
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+
+                            <label for="psw"><b>Confirm Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="confirmpsw" id="confirmpsw" required>
+                        
+                            <button type="submit" class="btn" id="signup">Signup</button>
+                            <button type="submit" class="btn" id="login">Login</button>
+                            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                        </form>
+                    </div>
+           </section>
+        </main>
+        <footer>
+            <hr>
+            <p>© 2021 Vegas Hawks Gym</p>
+        </footer>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>     
