@@ -26,7 +26,8 @@ function openForm() {
 
     function openPage(pageName) {
       // Simulate a mouse click:      
-      window.location.href = "https://github.com/gmannevada/html_final_assignment/" + pageName;
+      //window.location.href = "https://github.com/gmannevada/html_final_assignment/" + pageName;
+      window.location.href = pageName;
     }
  
  
