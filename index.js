@@ -23,11 +23,10 @@ function openForm() {
     openForm();
     };
 
-    
-    function openPage() {
-      // Simulate a mouse click:
-      window.location.href = "https://cmgraham23.github.io/HTML-Assignment-Final-Assignment/blog.html";
 
+    function openPage(pageName) {
+      // Simulate a mouse click:
+      window.location.href = "https://github.com/gmannevada/html_final_assignment/settings/" + pageName;
     }
  
  
